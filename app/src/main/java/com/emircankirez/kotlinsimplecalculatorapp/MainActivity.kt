@@ -21,7 +21,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     /*
-    I set the length of the textView to a maximum of 9 this way I avoid the invalid int error. Max Int = 10 digits
+    I set the length of the textView to a maximum of 9 this way I avoid the invalid int exception and wrong result. Max Int = 10 digits
+    Only mul fun can generate wrong number due to int limit. I didn't find a solution for it :(
      */
     fun sum(view : View) {
         firstNumber = binding.txtFirstNumber.text.toString()
